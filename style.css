@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+body {
+    background-color: black;
+    color: hsla(25, 100%, 97%, 0.9);
+    margin: auto 0;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+.logo {
+    margin-left: 10px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: hsla(25, 100%, 97%, 0.9);
+    margin-left: 1rem;
+}
+
+.navbar a:last-child {
+    margin-right: 0.5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    height: 700px;
+    width: 1200px;
+    background-image: url("./resources/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 0.75em;
+}
+
+h2 {
+    margin-bottom: 0.75em;
+}
+
+/* featured section */
+
+#featured {
+    width: 1000px;
+    text-align: center;
+    margin: 3em 0;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    margin-top: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.gallery-img {
+    object-fit: contain;
+    height: 200px;
+    width: 300px;
+}
+
+.gallery-item p {
+    padding: 10px;
+}
+
+/* locations */
+
+.loc-banner {
+    width: 1200px;
+    height: 500px;
+    background-image: url(./resources/img-locations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.locations {
+    margin-bottom: 15px;
+}
+
+.loc-container {
+    display: flex;
+}
+
+.loc-card {
+    width: 300px;
+    background-color: black;
+    text-align: center;
+}
+
+.loc-card:not(:last-child) {
+    margin-right: 40px;
+}
+
+.loc-card p, h3 {
+    padding: 1em;
+}
+
+/* Footer */
